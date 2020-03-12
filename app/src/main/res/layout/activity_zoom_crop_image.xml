@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.duane.imagerecognition.ZoomCropImageActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:background="@android:color/black"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="MOVE"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black">
+
+        <com.github.crazyorr.zoomcropimage.CropImageLayout
+            android:id="@+id/crop_overlay_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@android:color/black"
+        android:id="@+id/relativeLayout4"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/tv_use_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_cancel"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Confirm" />
+
+    </RelativeLayout>
+
+</LinearLayout>

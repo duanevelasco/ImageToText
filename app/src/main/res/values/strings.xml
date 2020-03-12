@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ImageRecognition</string>
+    <string name="error_photo_not_found">Photo not found!</string>
+</resources>
